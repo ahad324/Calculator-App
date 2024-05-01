@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Search Console Verification -->
+    <meta
+      name="google-site-verification"
+      content="CdIPfdbkz9aGBwh3i86nIdtUYCNZOGF0SIvUUKVnE1E"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator app</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Calculator app</title>
-
-</head>
-
-<body>
+  <body>
     <div class="calculator">
       <!-- <========= Head =========> -->
       <div class="themes">
@@ -20,18 +27,21 @@
           <p>calc</p>
         </span>
         <span>
-          <span class="theme-num">
-            <i>1</i><i>2</i><i>3</i>
-          </span>
+          <span class="theme-num"> <i>1</i><i>2</i><i>3</i> </span>
 
           <!-- <========= Theme changer Buttons =========> -->
           <span class="theme-changer">
             <p>THEME</p>
             <div class="switch">
               <div class="switch-radios">
-                <input type="radio" name="theme-type" value="one" id="first">
-                <input type="radio" name="theme-type" value="two" id="second">
-                <input type="radio" name="theme-type" value="three" id="third">
+                <input type="radio" name="theme-type" value="one" id="first" />
+                <input type="radio" name="theme-type" value="two" id="second" />
+                <input
+                  type="radio"
+                  name="theme-type"
+                  value="three"
+                  id="third"
+                />
               </div>
               <div class="switch-fas">
                 <i class="fas fa-moon"></i>
@@ -41,18 +51,19 @@
               <div class="ball"></div>
             </div>
           </span>
-
         </span>
       </div>
       <!-- <========= Screen 📺=========> -->
-      <input type="text" id="output" disabled>
+      <input type="text" id="output" disabled />
 
       <!-- <========= Buttons 🔳 =========> -->
       <div class="buttons">
         <button class="btn" onclick="appendNumber('7')" accesskey="7">7</button>
         <button class="btn" onclick="appendNumber('8')" accesskey="8">8</button>
         <button class="btn" onclick="appendNumber('9')" accesskey="9">9</button>
-        <button class="btn" onclick="deleteNumber()" accesskey="backspace">DEL</button>
+        <button class="btn" onclick="deleteNumber()" accesskey="backspace">
+          DEL
+        </button>
         <button class="btn" onclick="appendNumber('4')" accesskey="4">4</button>
         <button class="btn" onclick="appendNumber('5')" accesskey="5">5</button>
         <button class="btn" onclick="appendNumber('6')" accesskey="6">6</button>
@@ -70,8 +81,6 @@
       </div>
     </div>
 
-  <script src="index.js"></script>
-
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
